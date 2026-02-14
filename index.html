@@ -3,60 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Strategy Pro — Агентство цифрового маркетингу</title>
+    <title>SEO Strategy Pro</title>
+    <meta name="description" content="Головна сторінка">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .hero { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 100px 0; }
-        .feature-icon { font-size: 2.5rem; color: #0d6efd; margin-bottom: 1rem; }
+        .hero { 
+            background: linear-gradient(rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8)), 
+                        url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            padding: 120px 0; 
+        }
+        .feature-icon { font-size: 3rem; color: #0d6efd; margin-bottom: 1.5rem; transition: transform 0.3s; }
+        .col-md-4:hover .feature-icon { transform: scale(1.1); }
+        .btn-warning { font-weight: bold; padding: 12px 30px; text-transform: uppercase; }
+        .navbar-brand { font-size: 1.5rem; color: #0d6efd !important; }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-chart-line me-2"></i>SEO-Pro</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-chart-line me-2"></i>SEO-Pro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active fw-bold" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Послуги</a></li> 
+                <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> 
+                <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-4">Ми виводимо ваш бізнес у ТОП</h1>
+        <p class="lead mb-5 fs-4">Комплексний аудит, просування та контент-маркетинг для вашого успіху.</p>
+        <a href="contact.html" class="btn btn-warning btn-lg shadow">Отримати безкоштовну консультацію</a>
+    </div>
+</header>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row text-center g-5">
+            <div class="col-md-4">
+                <i class="fas fa-search-dollar feature-icon"></i>
+                <h3 class="fw-bold">Технічний аудит</h3>
+                <p class="text-muted">Проводимо глибокий аналіз коду та структури, виправляючи помилки, які заважають індексації.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-pen-fancy feature-icon"></i>
+                <h3 class="fw-bold">Контент-план</h3>
+                <p class="text-muted">Створюємо SEO-оптимізовані тексти, які залучають трафік та перетворюють відвідувачів на клієнтів.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-project-diagram feature-icon"></i>
+                <h3 class="fw-bold">Лінкбілдинг</h3>
+                <p class="text-muted">Нарощуємо якісну посилальну масу з авторитетних ресурсів для підняття рейтингу вашого домену.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">SEO Strategy Pro</h5>
+                <p class="text-white-50">Ми робимо складне просування простим та зрозумілим. Ваш ріст — наша головна метрика.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Навігація</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2 small"></i>Послуги</a></li>
+                    <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2 small"></i>Питання та відповіді</a></li>
+                    <li class="mb-2"><a href="blog.html" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2 small"></i>База знань</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-
-    <header class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Ми виводимо ваш бізнес у ТОП</h1>
-            <p class="lead">Комплексний аудит, просування та контент-маркетинг.</p>
-            <a href="missing.html" class="btn btn-warning btn-lg mt-3">Отримати консультацію</a>
-        </div>
-    </header>
-
-    <section class="py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <i class="fas fa-search feature-icon"></i>
-                    <h3>Технічний аудит</h3>
-                    <p>Знаходимо помилки, які заважають вашому росту. <strong></strong></p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-pen-nib feature-icon"></i>
-                    <h3>Контент-план</h3>
-                    <p>Пишемо тексти, які люблять і люди, і пошукові роботи.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-link feature-icon"></i>
-                    <h3>Лінкбілдинг</h3>
-                    <p>Будуємо якісну профільну масу для вашого домену.</p>
-                </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Контакти</h5>
+                <p class="text-white-50"><i class="fas fa-map-marker-alt me-2 text-primary"></i> Київ, вул. Диджитал, 1</p>
+                <p class="text-white-50"><i class="fas fa-envelope me-2 text-primary"></i> info@seo-pro.com</p>
             </div>
         </div>
-    </section>
+        <hr class="my-4 border-secondary">
+        <p class="text-center mb-0 text-white-50 small">&copy; 2026 SEO Strategy Pro. Всі права захищено.</p>
+    </div>
+</footer>
 
-    <footer class="bg-dark text-white py-4 mt-5 text-center">
-        <p>&copy; 2026 SEO Strategy Pro. Всі права захищено.</p>
-    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

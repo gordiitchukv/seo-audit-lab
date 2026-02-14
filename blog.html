@@ -2,33 +2,156 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Експертний блог про просування — SEO Strategy Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База знань про SEO — Блог агентства SEO Strategy Pro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .blog-card {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+        .blog-header {
+            background: linear-gradient(rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9)), 
+                        url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
-<body>
-    <div class="container py-5">
-        <h1 class="mb-5 text-center">База знань</h1>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" class="card-img-top"> <div class="card-body">
-                        <h5 class="card-title">Аналіз ключових слів у 2026 році</h5>
-                        <p class="card-text">Дізнайтеся, як змінилися алгоритми пошуку з приходом нових AI-технологій.</p>
-                        <a href="post1.html" class="btn btn-outline-primary">Читати далі</a>
-                    </div>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html text-primary">
+            <i class="fas fa-chart-line me-2"></i>SEO-Pro
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Послуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="blog.html">Блог</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="blog-header text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold">База знань</h1>
+        <p class="lead">Актуальні новини, кейси та покрокові інструкції зі світу SEO</p>
+    </div>
+</header>
+
+<main class="container py-4">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 blog-card">
+                <span class="badge bg-primary category-badge">AI & SEO</span>
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" class="card-img-top" alt="Ключові слова">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Аналіз ключових слів у 2026 році</h5>
+                    <p class="card-text text-muted">Дізнайтеся, як змінилися алгоритми пошуку з приходом нових AI-технологій та генеративного пошуку.</p>
                 </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1504868584819-f8e90526354c?w=500" class="card-img-top"> <div class="card-body">
-                        <h5 class="card-title">Технічний чек-лист для сайту</h5>
-                        <p class="card-text">Повний список того, що потрібно перевірити перед запуском рекламної кампанії.</p>
-                        <a href="post2.html" class="btn btn-outline-primary">Читати далі</a>
-                    </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                    <a href="post1.html" class="btn btn-outline-primary w-100">Читати статтю</a>
                 </div>
             </div>
         </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 blog-card">
+                <span class="badge bg-success category-badge">Технічне SEO</span>
+                <img src="https://images.unsplash.com/photo-1504868584819-f8e90526354c?w=500" class="card-img-top" alt="Чек-лист">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Технічний чек-лист для сайту</h5>
+                    <p class="card-text text-muted">Повний список того, що потрібно перевірити перед запуском рекламної кампанії, щоб не злити бюджет.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                    <a href="post2.html" class="btn btn-outline-primary w-100">Читати статтю</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 blog-card">
+                <span class="badge bg-warning text-dark category-badge">Лінкбілдинг</span>
+                <img src="https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?w=500" class="card-img-top" alt="Лінкбілдинг">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Лінкбілдинг 2026</h5>
+                    <p class="card-text text-muted">Стратегії побудови зовнішніх посилань у нових реаліях: від аутрічу до цифрового PR.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                    <a href="post3.html" class="btn btn-outline-primary w-100">Читати статтю</a>
+                </div>
+            </div>
+        </div>
+
     </div>
+</main>
+
+<footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">SEO Strategy Pro</h5>
+                <p class="text-white-50">Ми створюємо стратегії, які приносять результат, а не просто позиції в пошуку.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Навігація</h5>
+                <ul class="list-unstyled">
+                    <li><a href="services.html" class="text-white-50 text-decoration-none hover-white">Послуги</a></li>
+                    <li><a href="faq.html" class="text-white-50 text-decoration-none hover-white">FAQ</a></li>
+                    <li><a href="blog.html" class="text-white-50 text-decoration-none hover-white">Блог</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none hover-white">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Зворотний зв'язок</h5>
+                <p class="text-white-50"><i class="fas fa-envelope me-2"></i> help@seo-pro.com</p>
+                <div class="mt-3">
+                    <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white-50 me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-white-50"><i class="fab fa-telegram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 border-secondary">
+        <p class="text-center mb-0 text-white-50 small">&copy; 2026 SEO Strategy Pro. Всі права захищено.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
