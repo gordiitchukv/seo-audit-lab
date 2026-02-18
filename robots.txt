@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /drafts/
+Disallow: /private/
+
+Allow: /
+
+Sitemap: https://gordiitchukv.github.io/seo-audit-lab/sitemap.xml
