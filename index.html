@@ -64,6 +64,7 @@
       }
     </style>
   </head>
+
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
@@ -120,9 +121,14 @@
           <a href="post3.html" style="color: white">лінкбілдингу у 2026 році</a
           >.
         </p>
-        <a href="contact.html" class="btn btn-warning btn-lg shadow"
-          >Отримати безкоштовну консультацію</a
+        <a
+          href="contact.html"
+          class="btn btn-warning btn-lg shadow js-cta-btn"
+          data-section="hero"
+          data-button-text="Отримати безкоштовну консультацію"
         >
+          Отримати безкоштовну консультацію
+        </a>
       </div>
     </header>
 
@@ -206,13 +212,22 @@
               <i class="fas fa-envelope me-2"></i> help@seo-pro.com
             </p>
             <div class="mt-3">
-              <a href="#" class="text-white-50 me-3"
+              <a
+                href="#"
+                class="text-white-50 me-3 social-link"
+                data-platform="facebook"
                 ><i class="fab fa-facebook fa-lg"></i
               ></a>
-              <a href="#" class="text-white-50 me-3"
+              <a
+                href="#"
+                class="text-white-50 me-3 social-link"
+                data-platform="linkedin"
                 ><i class="fab fa-linkedin fa-lg"></i
               ></a>
-              <a href="#" class="text-white-50"
+              <a
+                href="#"
+                class="text-white-50 social-link"
+                data-platform="telegram"
                 ><i class="fab fa-telegram fa-lg"></i
               ></a>
             </div>
@@ -226,5 +241,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="analytics-events.js"></script>
   </body>
 </html>
